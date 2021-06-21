@@ -1,0 +1,33 @@
+(($) => {
+    const api = Cels.Globals.api;
+    const meta = Cels.Globals.meta;
+
+    const $sensor_reading_table = $('table#sensor-reading-list');
+    $sensor_reading_table.DataTable({
+        'serverSide': true,
+        'ajax': {
+            'url': api('sensor-values?dt'),
+            'method': 'GET',
+            'headers': {
+                'Authorization': `Bearer ${meta('api-key')}`
+            },
+        },
+        'ordering': false,
+        'columns': [
+            {
+                'data': 'alias', 
+                'className': 'align-middle', 
+                'render': (data, type, row) => {
+                    return `<i class="fas fa-angle-right" aria-hidden="true"></i>`;
+                },
+            },
+            {
+                'data': null, 
+                'className': 'align-middle text-right', 
+                'render': (data, type, row) => {
+                    return `<i class="fas fa-angle-right" aria-hidden="true"></i>`;
+                },
+            },
+        ],
+    });
+})(jQuery);

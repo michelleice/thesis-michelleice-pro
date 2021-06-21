@@ -1,0 +1,27 @@
+.loading-hint {
+    background-color: #ddd;
+    animation: hintloading 500ms ease-in-out 0s infinite reverse;
+    -webkit-animation: hintloading 500ms ease-in-out 0s infinite reverse;
+}
+@keyframes hintloading {
+    0% {
+        opacity: 0.75;
+    }
+    50%  {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.75;
+    }
+}
+@-webkit-keyframes hintloading {
+    0% {
+        opacity: 0.75;
+    }
+    50%  {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.75;
+    }
+}

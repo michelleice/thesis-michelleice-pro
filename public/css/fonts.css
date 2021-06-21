@@ -1,0 +1,21 @@
+
+body {
+    font-family: "Assistant", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Baloo 2", sans-serif;
+}
+
+.text-ff-lilita {
+    font-family: "Lilita One", sans-serif;
+}
+
+.text-ff-titillium {
+    font-family: 'Titillium Web', sans-serif;
+}
